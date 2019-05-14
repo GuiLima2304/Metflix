@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+.log{
+    margin: 0 auto;
+    background-color: rgb(243, 230, 255);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+h5, h2{
+    font-family: 'Righteous', cursive;
+}
+
+.botaoEnviar{
+    background-color: black;
+    color: white;
+}

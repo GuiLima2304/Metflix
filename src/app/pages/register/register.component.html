@@ -1,0 +1,25 @@
+<app-logo></app-logo>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+
+  <div class="form-group col-md-4 formCadastro">
+    <h4>Nome:</h4>
+    <input type="text" placeholder="nome" formControlName="name" class="form-control mb-2"><br>
+    <span *ngIf="name.dirty && name.hasError('required')">Campo Obrigatório</span>
+
+    <h4>Nick:</h4>
+    <input type="text" placeholder="nickName" formControlName="nickName" class="form-control mb-2"><br>
+    <span *ngIf="nickName.dirty && nickName.hasError('required')">Campo Obrigatório</span>
+
+    <h4>Email:</h4>
+    <input type="text" placeholder="email" formControlName="email" class="form-control mb-2"><br>
+    <span *ngIf="email.dirty && email.hasError('required')">Campo Obrigatório</span>
+    <span *ngIf="email.dirty && email.hasError('email')">Email invalido</span>
+
+    <h4>Senha:</h4>
+    <input type="password" placeholder="password" formControlName="password" class="form-control mb-2"><br>
+    <span *ngIf="password.dirty && password.hasError('required')">Campo Obrigatório</span>
+
+    <button type="submit" class="btn botaoCadastrar">Cadastrar</button>
+  </div>
+</form>

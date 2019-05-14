@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+h1{
+    color:rgb(238, 58, 238);
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+}
+
+.nav{
+    background-color: black;
+    
+}

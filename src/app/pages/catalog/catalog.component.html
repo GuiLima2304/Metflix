@@ -1,0 +1,11 @@
+<app-logo></app-logo>
+<div class="all">
+    <div class="divBusca">
+        <h5 id="txtBusca">Busca:</h5>
+        <input  type="text" placeholder="buscar" class="form-control col-md-3" (input)="buscar()" [(ngModel)] = "busca"><br>
+    </div>
+    <div *ngFor="let movie of list" class="filmes">
+        <app-card-movie [movie]='movie'></app-card-movie>
+    </div>
+</div>
+

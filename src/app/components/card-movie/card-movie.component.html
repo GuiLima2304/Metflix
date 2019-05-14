@@ -1,0 +1,8 @@
+<div class="card">
+  <img src="{{movie['image']}}">
+  <div class="info">
+    <h5><strong>{{movie['title']}}</strong></h5>
+    <p>{{movie['description']}}</p>
+  </div>
+    <button class="btn botao"  (click)="redirectMovie(movie['id'])">Ver Mais</button>
+</div>

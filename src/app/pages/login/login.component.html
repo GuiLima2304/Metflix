@@ -1,0 +1,20 @@
+<app-logo></app-logo>
+<div class="all">
+
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+  <div class="form-group col-md-4 log">
+    <h2>Login</h2><br>
+    <h5>Email:</h5>
+    <input type="text" placeholder="email" formControlName="email" class="form-control mb-2"><br>
+    <span *ngIf="email.hasError ('required' )&& email.dirty">Campo Obrigatório </span>
+    <span *ngIf="email.hasError('email') && email.dirty">E-mail em formato inválido</span>
+    <h5>Senha:</h5>
+    <input type="password" placeholder="password" formControlName="password" class="form-control"><br><br>
+    <span *ngIf="password.hasError ('required' )&& password.dirty">Campo Obrigatório </span>
+
+    <button type="submit" class="btn botaoEnviar">Enviar</button><br><br>
+    <a routerLink="/register">Registrar-se</a>
+  </div>
+ 
+</form>
+</div>
